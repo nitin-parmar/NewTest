@@ -1,0 +1,214 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Covetus</title>
+ <link href="https://fonts.googleapis.com/css?family=Karla" rel="stylesheet">
+<style>
+	html,body, * {
+		margin: 0px;
+		padding: 0px;
+		font-family: 'Karla', sans-serif;
+	}
+	.dev-process {
+		background-color: #f5f5f5;
+		padding: 100px;		
+	}
+	@keyframes rotate {
+		0%{transform: rotate(0deg);}
+		100%{transform: rotate(360deg);}
+	}
+	.circle-wrapp {
+		width: 430px;
+		margin: 0px auto;
+		position: relative;
+		z-index: 2;		
+	}
+	.circle-wrapp img {
+		animation: rotate 10s linear infinite; 
+	}
+	.circle-wrapp .caption {
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		color: #352d74;
+		font-size: 25px;
+		text-transform: uppercase;
+		text-align: center;	
+	}
+	.process-steps {
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		transform: translate(-50%,-50%);
+		z-index: 3;
+		width: 430px;
+		height: 430px;
+	}
+	.process-steps li {		
+		display: block;
+		width: 300px;
+		position: absolute;
+		margin: 0px;
+	}
+	.process-steps li h4 {
+		display: block;
+		font-size: 24px;
+	}
+	.process-steps li p {
+		display: block;
+		height: 50px;
+		overflow: hidden;
+		color: #2b2a29;
+		font-size: 14px;
+	}
+	/*Planning*/
+	@keyframes planinng {
+		0%   { 	transform: rotate(0deg) translate(300px, 200px) rotate(0deg); }
+		12.5%  { 	transform: rotate(45deg) translate(180px, 200px) rotate(-45deg); }
+		25%  { 	transform: rotate(90deg) translate(200px, 200px) rotate(-90deg); }
+		37.5%  {  transform: rotate(135deg) translate(270px, 200px) rotate(-135deg); }
+		50%  {  transform: rotate(180deg) translate(280px, 200px) rotate(-180deg); }
+		62.5%  { 	transform: rotate(225deg) translate(180px, 200px) rotate(-225deg); }
+		75%  { 	transform: rotate(270deg) translate(250px, 200px) rotate(-270deg); }
+		87.5% { 	transform: rotate(315deg) translate(330px, 200px) rotate(-315deg); }
+		100% { 	transform: rotate(360deg) translate(300px, 200px) rotate(-360deg); }
+	}
+	.process-steps li.planning {				
+		left: 50%;
+		top: 50%;
+		margin-left: -150px;
+		margin-top: -46px;
+		transform: translate(300px, 200px);
+		animation: planinng 10s linear infinite;
+	}
+	.process-steps li.planning h4 {		
+		color: #b0292f;
+	}
+	
+	/*Analysis*/
+	@keyframes analysis {
+		0%   { 	transform: rotate(0deg) translate(-250px, 350px) rotate(0deg); }
+		12.5%  { 	transform: rotate(45deg) translate(-200px, 250px) rotate(-45deg); }
+		25%  { 	transform: rotate(90deg) translate(-180px, 180px) rotate(-90deg); }
+		37.5%  {  transform: rotate(135deg) translate(-150px, 150px) rotate(-135deg); }
+		50%  {  transform: rotate(180deg) translate(-250px, 200px) rotate(-180deg); }
+		62.5%  { 	transform: rotate(225deg) translate(-250px, 150px) rotate(-225deg); }
+		75%  { 	transform: rotate(270deg) translate(-250px, 250px) rotate(-270deg); }
+		87.5% { 	transform: rotate(315deg) translate(-250px, 300px) rotate(-315deg); }
+		100% { 	transform: rotate(360deg) translate(-250px, 350px) rotate(-360deg); }
+	}
+	.process-steps li.analysis {				
+		transform: translate(-250px, 350px);
+		text-align: right;
+		animation: analysis 10s linear infinite;
+	}
+	.process-steps li.analysis h4 {		
+		color: #293e6b;
+	}
+	
+	/*Design*/
+	.process-steps li.design {				
+		transform: translate(-550px, -60px);
+		text-align: right;
+	}
+	.process-steps li.design h4 {		
+		color: #0194DA;
+	}
+	
+	/*implementation*/
+	.process-steps li.implementation {				
+		transform: translate(-470px, -260px);
+		text-align: right;
+	}
+	.process-steps li.implementation h4 {		
+		color: #0c9e8b;
+	}
+	
+	/*Testing & Integration*/
+	.process-steps li.testing {				
+		transform: translate(165px, -260px);		
+	}
+	.process-steps li.testing h4 {		
+		color: #EDB717;
+	}
+	
+	/*Maintenance*/
+	.process-steps li.maintenance {				
+		transform: translate(245px, -60px);
+	}
+	.process-steps li.maintenance h4 {		
+		color: #ef8201;
+	}
+	
+</style>
+</head>
+
+<body>
+
+	<div class="dev-process">	
+		<ul class="process-steps">
+			
+			<!--<li class="planning">			
+				<div class="text-wrapp">
+					<h4>Planning</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					<a href="#">^</a>
+				</div>
+			</li>-->
+			
+			<li class="analysis">			
+				<div class="text-wrapp">
+					<h4>Analysis</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					<a href="#">^</a>
+				</div>
+			</li>
+			<!--
+			<li class="design">			
+				<div class="text-wrapp">
+					<h4>Design</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					<a href="#">^</a>
+				</div>
+			</li>
+			
+			<li class="implementation">			
+				<div class="text-wrapp">
+					<h4>Implementation</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					<a href="#">^</a>
+				</div>
+			</li>
+			
+			<li class="testing">			
+				<div class="text-wrapp">
+					<h4>Testing & Integration</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					<a href="#">^</a>
+				</div>
+			</li>
+			
+			<li class="maintenance">			
+				<div class="text-wrapp">
+					<h4>Maintenance</h4>
+					<p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
+					<a href="#">^</a>
+				</div>
+			</li>-->
+			
+		</ul>	
+		<div class="circle-wrapp">			
+			<img src="images/Web-Development-Cycle.png" >
+			<span class="caption">Web Development Cycle</span>
+		</div>
+		
+	</div>
+
+
+</body>
+</html>
